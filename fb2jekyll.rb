@@ -5,9 +5,9 @@ Bundler.require(:default)
 require_relative 'lib/install'
 require_relative 'lib/clean'
 
-class ImportFbToJekyll < Thor
+class Fb2Jekyll < Thor
   include Install
   include Clean
 end
 
-ImportFbToJekyll.start ARGV
+Fb2Jekyll.start ARGV
